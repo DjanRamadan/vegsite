@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'scawy';
+    src: url('font/Demon Panic.otf');
+}
+
+@font-face {
+    font-family: 'scawy2';
+    src: url('font/Film Horor.otf');
+}
+
+@font-face {
+    font-family: 'scawy3';
+    src: url('font/Beautiful Horror.ttf');
+}
+
+@font-face {
+    font-family: 'scawy4';
+    src: url('font/morgus.ttf');
+}
+
+@font-face {
+    font-family: 'scawy5';
+    src: url('font/Raven Song.ttf');
+}
+
+@font-face {
+    font-family: 'scawy6';
+    src: url('font/Slashtacular.ttf');
+}
+
+body {
+    background-image: url('vegeimg/bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: rgb(170, 164, 155);
+    text-shadow: rgba(0, 0, 0, 0.8);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+header h1 {
+    font-family: 'scawy5', sans-serif;
+    font-size: 65px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.vegetable {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 80%;
+    clear: both;
+}
+
+.text-section {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.text-section h2 {
+    font-family: 'scawy4', sans-serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    font-family: 'scawy2', sans-serif;
+    font-size: 44px;
+}
+
+.image-section {
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+.image-section img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    font-family: 'scawy2';
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #4d5e4d;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #9b111e;
+    text-shadow: 0 0 5px #000000;
+    cursor: pointer;
+}
+
+.hover-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-img:hover {
+    transform: scale(1.1) rotate(-1deg);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .vegetable {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-section, .image-section, .description {
+        width: 100%;
+    }
+
+    .image-section img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .description {
+        margin-top: 10px;
+    }
+}
